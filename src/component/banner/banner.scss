@@ -1,0 +1,100 @@
+.banner {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+
+    .links {
+        padding: 20px;
+    }
+
+    a {
+        color: #4C5565;
+        text-decoration: none;
+        padding: 20px;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: #4c5565;
+            color: white;
+        }
+    }
+}
+
+.collapse {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    font-size: 20px;
+
+    a {
+        color: #4C5565;
+        text-decoration: none;
+        padding: 15px 20px;
+
+        &:active {
+            background-color: #4c5565;
+            color: white;
+        }
+    }
+
+    /* Bouton du menu mobile */
+    .btn-menu {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: none;
+        padding: 15px 20px;
+    }
+
+    /* Menu mobile (caché par défaut) */
+    .menu-content {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px 0;
+        transition: max-height 0.3s ease-in-out;
+
+        a {
+            color: #4C5565;
+            text-decoration: none;
+            padding: 15px 20px;
+
+            &:active {
+                background-color: #4c5565;
+                color: white;
+            }
+        }
+    }
+}
+
+// Mode tablette
+@media (max-width: 767px) {
+    .banner {
+        display: none;
+    }
+
+    .collapse {
+        .btn-menu {
+            display: flex;
+        }
+    }
+}

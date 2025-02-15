@@ -1,0 +1,237 @@
+.modal {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        height: 90%;
+        background-color: white;
+        border-radius: 25px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        padding: 20px 0;
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 80%;
+            background-color: #f3f3f3;
+            padding: 10px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 25px 25px 0 0;
+
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                color: #4C5565;
+
+                .title-projet {
+                    width: 100%;
+                    text-align: center;
+                    font-size: larger;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+
+                .modal-close {
+                    font-size: 35px;
+                    color: #4C5565;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+
+            .progress-container {
+                width: 100%;
+                background: #ddd;
+                height: 4px;
+                margin-top: 5px;
+
+                .progress-bar {
+                    width: 0;
+                    height: 4px;
+                    background: #4C5565;
+                    transition: width 0.25s ease-in-out;
+                }
+            }
+        }
+
+        .maquette-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            margin-top: 54px;
+
+            p {
+                font-weight: bold;
+                font-style: normal;
+                text-decoration: underline;
+                text-transform: uppercase;
+                padding: 20px 0;
+            }
+
+            .maquette {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .image {
+                    width: 95%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .text-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 25px;
+            width: 95%;
+
+            .objectifs,
+            .info-projet {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-style: italic;
+                text-align: justify;
+                width: 45%;
+
+                p {
+                    font-weight: bold;
+                    font-style: normal;
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+
+                ul {
+                    list-style-type: none;
+                    margin-top: 0;
+                }
+
+                ul li::before {
+                    content: "- ";
+                }
+            }
+        }
+
+        .url-code {
+            margin: 50px 0 30px 0;
+
+            a {
+                text-decoration: none;
+                color: #4C5565;
+                font-weight: bold;
+                font-size: larger;
+            }
+        }
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+
+    .link {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 200px;
+        font-family: "Montserrat";
+        font-size: larger;
+        font-weight: bolder;
+        cursor: pointer;
+        font-style: italic;
+
+        span {
+            font-size: 1.3em;
+            color: #4c5565;
+        }
+    }
+
+    .img {
+        object-fit: cover;
+        opacity: 0.6;
+        width: 300px;
+        height: 200px;
+        border-radius: 25px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .modal {
+        .modal-content {
+            padding-top: 120px;
+
+            .header {
+                position: fixed;
+                top: 0;
+                width: 80%;
+                background-color: #f3f3f3;
+                padding: 10px 0;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+                border-radius: 25px 25px 0 0;
+
+                .row {
+                    .title-projet {
+                        font-size: medium;
+                    }
+
+                    .modal-close {
+                        font-size: 28px;
+                    }
+                }
+            }
+
+            .maquette-container {
+                display: none;
+            }
+
+            .text-container {
+                flex-direction: column;
+                align-items: center;
+
+                .objectifs,
+                .info-projet {
+                    width: 90%;
+                    padding-bottom: 20px;
+                }
+
+                ul {
+                    padding-left: 0;
+                }
+            }
+
+            .url-code {
+                margin: 0px 0 30px 0;
+            }
+        }
+    }
+}

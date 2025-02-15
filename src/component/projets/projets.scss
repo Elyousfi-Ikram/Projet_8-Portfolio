@@ -1,0 +1,25 @@
+#projets {
+    margin: 0 2%;
+
+    .btn-projet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 62px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        color: #4C5565;
+        font-size: 36px;
+
+        hr {
+            width: 15%;
+        }
+    }
+}
+

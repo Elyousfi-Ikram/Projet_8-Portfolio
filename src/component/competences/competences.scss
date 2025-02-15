@@ -1,0 +1,80 @@
+#competences {    
+    h1 {
+        width: 100%;
+        text-align: center;
+        color: #4C5565;
+        font-size: 36px;
+        font-family: "Montserrat";
+    
+        hr {
+            width: 15%;
+        }
+    }    
+
+    .title {
+        display: flex;
+        align-items: center;
+        margin: 0 2%;
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-family: "Raleway";
+            background: linear-gradient(90deg, #FFF, #4c5565, #FFF);
+            padding: 4px 0;
+        }
+    }
+
+    .competences-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(127, 17, 224, 0.3);
+        border-radius: 25px;
+        margin: 0 2% 5%;
+
+        .competences-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            margin: 20px 0 10px 0;
+            position: relative;
+
+            .icon {
+                width: 70px;
+                height: 60px;
+                border-radius: 5px;
+                color: #4C5565;
+            }
+
+            .collapse {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .collapse-btn {
+                    border: 1px solid #ddd;
+                    box-shadow: 0 2px 4px rgba(127, 17, 224, 0.3);
+                    z-index: 1;
+                    border-radius: 25px;
+                    padding: 5px 15px 0px 15px;
+                    cursor: pointer;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                width: 100%;
+            }
+
+            ul li::before {
+                content: "- ";
+            }
+        }
+    }
+}

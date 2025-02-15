@@ -1,0 +1,185 @@
+$chevron-size: 10px;
+$chevron-spacing: 0.1s;
+$background-color: rgba(0, 0, 0, 0.5);
+$chevron-color: #fff;
+$border-radius: 50%;
+$btn-size: 60px;
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 0 !important;
+
+    .btn-location {
+        position: relative;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 5;
+        bottom: -35px;
+
+        .circle-animation {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 45px;
+            height: 45px;
+            border: 2px solid rgb(136, 136, 136);
+            border-radius: 50%;
+            animation: pulse 2.0s infinite;
+            z-index: -1;
+        }
+
+        .img-location {
+            background-color: white;
+            border: 1px solid $chevron-color;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            padding: 2px;
+            width: $btn-size;
+            height: $btn-size;
+            z-index: 1;
+        }
+    }
+
+    .collapse-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        margin-top: 72px;
+        text-align: center;
+        background: rgba(21, 29, 42, 0.86);
+
+        &.open {
+            animation-name: open;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-direction: reverse;
+        }
+
+        .info-contact,
+        .adresse {
+            position: relative;
+            z-index: 0;
+            display: flex;
+            align-items: center;
+            font-size: 26px;
+            color: #fff;
+            height: 45px;
+            width: 60%;
+        }
+
+        .info-contact {
+            justify-content: space-around;
+
+            .mail,
+            .phone {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                gap: 15px;
+            }
+        }
+
+        .adresse {
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 65px;
+            background-color: rgb(83, 85, 113);
+            gap: 60px;
+            font-size: 16px;
+            color: #fff;
+
+            a {
+                font-size: 30px;
+                color: #fff;
+                text-decoration: none;
+                padding-right: 30px;
+
+                .icon-link {
+                    border: 2px solid white;
+                    border-radius: 10px;
+                    padding: 4px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.8);
+        opacity: 0;
+    }
+}
+
+@keyframes open {
+    from {
+        transform: translateY(-400px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    #footer {
+        .collapse-content {
+            gap: 40px;
+            padding-bottom: 22px;
+            height: 380px;
+
+            .info-contact,
+            .adresse {
+                flex-direction: column;
+                font-size: medium;
+            }
+
+            .adresse {
+                flex-direction: row;
+                font-size: medium;
+
+                .icon-adresse {
+                    font-size: xx-large;
+                }
+            }
+
+            .links {
+                font-size: 11px;
+
+                .social {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}

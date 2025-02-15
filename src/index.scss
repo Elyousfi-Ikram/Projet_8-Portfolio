@@ -1,0 +1,41 @@
+$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-family-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: $font-family-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  code {
+    font-family: $font-family-code;
+  }
+
+  #root {
+    &>* {
+      max-width: 100%;
+    }
+
+    &>*[id] {
+      padding: 56.4px 0;
+    }
+
+    .Header,
+    .main {
+      margin: 0 5%;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  body {
+    #root {
+      &>*[id] {
+        padding: 45px 0;
+      }
+    }
+  }
+}

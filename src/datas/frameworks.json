@@ -1,0 +1,24 @@
+[
+    {
+        "framework": "React",
+        "competencesFrame": [
+            "Comprendre le fonctionnement de React.",
+            "Créer une application React complète avec Create React App.",
+            "Stocker et récupérer des données avec le state et les effets.",
+            "Construire une Single Page Application complète qui respecte une architecture robuste.",
+            "Maîtriser les hooks.",
+            "Tester votre application React.",
+            "Evoluer dans une codebase qui utilise des composants classe."
+        ],
+        "icon": "/asset/icons/ReactJS.png"
+    },
+    {
+        "framework": "Node.js",
+        "competencesFrame": [
+
+        ],
+        "icon": [
+            "/asset/icons/nodejs.png"
+        ]
+    }
+]
