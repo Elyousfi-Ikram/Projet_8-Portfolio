@@ -58,13 +58,6 @@ $btn-size: 60px;
         text-align: center;
         background: rgba(21, 29, 42, 0.86);
 
-        &.open {
-            animation-name: open;
-            animation-duration: 1s;
-            animation-timing-function: ease-in;
-            animation-direction: reverse;
-        }
-
         .info-contact,
         .adresse {
             position: relative;
@@ -137,16 +130,6 @@ $btn-size: 60px;
     100% {
         transform: translate(-50%, -50%) scale(1.8);
         opacity: 0;
-    }
-}
-
-@keyframes open {
-    from {
-        transform: translateY(-400px);
-    }
-
-    to {
-        transform: translateY(0);
     }
 }
 
