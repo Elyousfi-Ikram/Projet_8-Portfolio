@@ -1,6 +1,6 @@
 [
     {
-        "title": "Projet 1",
+        "title": "Site d'une agence de voyage",
         "img": "/asset/projets/Voyage.png",
         "titleProjet": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS.",
         "objectifs": [
@@ -18,7 +18,7 @@
         "URLcode": "https://github.com/Elyousfi-Ikram/Projet_2-HTML-CSS"
     },
     {
-        "title": "Projet 2",
+        "title": "Site portfolio d'une architecte d'intérieur",
         "img": "asset/projets/Architecte.jpg",
         "titleProjet": "Créez une page web dynamique avec JavaScript.",
         "objectifs": [
@@ -39,7 +39,7 @@
         "URLcode": "https://github.com/Elyousfi-Ikram/Projet_3-JavaScript"
     },
     {
-        "title": "Projet 3",
+        "title": "Site d'une photographe",
         "img": "/asset/projets/Photographe.jpg",
         "titleProjet": "Débuggez et optimisez un site de photographe.",
         "objectifs": [
@@ -53,7 +53,7 @@
         "URLcode": "https://github.com/Elyousfi-Ikram/Projet_4-Debuggez-Optimisation"
     },
     {
-        "title": "Projet 4",
+        "title": "Site de location immobilière",
         "img": "/asset/projets/Agence.jpg",
         "titleProjet": "Créez une application web de location immobilière avec React.",
         "objectifs": [
@@ -77,7 +77,7 @@
         "URLcode": "https://github.com/Elyousfi-Ikram/Projet_5-React"
     },
     {
-        "title": "Projet 5",
+        "title": "Site de notation de livres",
         "img": "/asset/projets/Book.jpg",
         "titleProjet": "Développez le back-end d'un site de notation de livres.",
         "objectifs": [
@@ -99,7 +99,7 @@
         "URLcode": "https://github.com/Elyousfi-Ikram/Projet_6-Back-end"
     },
     {
-        "title": "Projet 6",
+        "title": "Site de création de menu",
         "img": "/asset/projets/MENU.png",
         "titleProjet": "Planifiez le développement du site de votre client.",
         "objectifs": [
