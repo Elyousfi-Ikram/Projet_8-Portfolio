@@ -12,8 +12,7 @@
         "infoProjet": "Créer une page d'accueil responsive pour une agence de voyage en utilisant HTML et CSS, en s'appuyant sur des maquettes Figma adaptées aux écrans mobile, tablette et desktop. L'objectif est de concevoir un code structuré et stylisé manuellement, tout en développant des compétences essentielles en design responsive afin d'assurer une expérience utilisateur optimale sur tous les appareils.",
         "maquettes": [
             "/asset/projets/projet-1-Desktop.png",
-            "/asset/projets/projet-1-Tablette.png",
-            "/asset/projets/projet-1-Mobile.png"
+            "/asset/projets/projet-1-Tablette.png"
         ],
         "URLcode": "https://github.com/Elyousfi-Ikram/Projet_2-HTML-CSS"
     },
@@ -69,7 +68,6 @@
             "/asset/projets/projet-4-Fiche-Logement_Desktop.png",
             "/asset/projets/projet-4-A-Propos_Desktop.png",
             "/asset/projets/projet-4-404_Desktop.png",
-            "/asset/projets/projet-4-Home_Mobile.png",
             "/asset/projets/projet-4-Fiche-Logement_Mobile.png",
             "/asset/projets/projet-4-A-Propos_Mobile.png",
             "/asset/projets/projet-4-404_Mobile.png"

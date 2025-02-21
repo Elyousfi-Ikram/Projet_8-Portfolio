@@ -50,7 +50,6 @@
                 }
 
                 .modal-close {
-                    font-size: 35px;
                     color: #4C5565;
                     background-color: transparent;
                     border: none;
@@ -73,7 +72,7 @@
             }
         }
 
-        .maquette-container {
+        #maquette-container {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -91,12 +90,14 @@
 
             .maquette {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                gap: 36px;
 
                 .image {
-                    width: 95%;
-                    height: 100%;
+                    width: 200px;
+                    height: 300px;
                 }
             }
         }
@@ -145,6 +146,54 @@
                 font-size: larger;
             }
         }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+
+            button {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.carousel {
+    .modal-content {
+        overflow-y: clip;
+
+        .carousel-image {
+            width: 500px;
+            height: 600px;
+        }
+
+        .btn-left,
+        .btn-right,
+        .modal-close {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            color: #4C5565;
+        }
+
+        .btn-left {
+            top: 50%;
+            left: 50px;
+            font-size: 40px;
+        }
+
+        .btn-right {
+            top: 50%;
+            right: 50px;
+            font-size: 40px;
+        }
+
+        .modal-close {
+            top: 2%;
+            right: 2%;
+            font-size: 30px;
+        }
     }
 }
 
@@ -188,11 +237,12 @@
 @media (max-width: 767px) {
     .modal {
         .modal-content {
-            padding-top: 120px;
+            padding-top: 90px;
+            height: 65%;
 
             .header {
                 position: fixed;
-                top: 0;
+                top: 60px;
                 width: 80%;
                 background-color: #f3f3f3;
                 padding: 10px 0;
@@ -210,8 +260,12 @@
                 }
             }
 
-            .maquette-container {
-                display: none;
+            #maquette-container {
+                margin-top: 0;
+
+                .maquette {
+                    justify-content: center;
+                }
             }
 
             .text-container {
@@ -234,4 +288,31 @@
             }
         }
     }
+
+    .carousel {
+        .modal-content {
+            height: 65%;
+
+            .carousel-image {
+                width: 300px;
+                height: 380px;
+            }
+
+            .btn-left {
+                top: 50%;
+                left: 0;
+                font-size: 40px;
+                color: #abadad;
+            }
+    
+            .btn-right {
+                top: 50%;
+                right: 0;
+                font-size: 40px;
+                color: #adadad;
+
+            }
+        }
+    }
 }
+
