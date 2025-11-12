@@ -1,0 +1,39 @@
+<footer class="footer w-100 position-relative z-10">
+    <div class="footer-container">
+        <div class="footer-content d-flex flex-column justify-content-between align-items-center flex-column w-100 pt-5">
+            <div class="contact-info d-flex flex-column justify-content-center align-items-center gap-4 w-100"> 
+                <h2 class="contact-title fw-normal text-center pb-3 mb-3 position-relative">Contactez-moi</h2>
+
+                <div class="contact-row d-grid gap-5 w-100">
+                    <div class="contact-item d-flex justify-content-center align-items-center gap-3 p-3 rounded-4">
+                        <i class="contact-icon fas fa-at"></i>
+                        <a [href]="'mailto:' + contactInfo.email" class="contact-link text-white text-decoration-none fs-6 fw-normal" aria-label="Envoyer un email">
+                            {{ contactInfo.email }}
+                        </a>
+                    </div>
+
+                    <div class="contact-item d-flex justify-content-center align-items-center gap-3 p-3 rounded-4">
+                        <i class="contact-icon fas fa-mobile"></i>
+                        <a [href]="phoneHref" class="contact-link text-white text-decoration-none fs-6 fw-normal" aria-label="Appeler">
+                            {{ contactInfo.phone }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex justify-content-between align-items-center py-4 px-3 mt-5">
+                <div class="copyright fs-6 fw-normal">
+                    <span>© {{ currentYear }} EL YOUSFI Ikram. Tous droits réservés.</span>
+                </div>
+
+                <div class="social-links d-flex justify-content-center align-items-center gap-3">
+                    <a *ngFor="let social of socialLinks" [href]="social.url" target="_blank" rel="noopener noreferrer"
+                        class="social-link d-flex justify-content-center align-items-center position-relative text-decoration-none text-white rounded-5" [attr.aria-label]="social.ariaLabel">
+                        <i class="social-icon fs-5 " [ngClass]="social.iconClass"></i>
+                        <span class="social-tooltip position-absolute text-white py-1 px-2 rounded-3">{{ social.name }}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,338 @@
+// Variables — Couleurs
+$khaki-primary: #6b7c32;
+$khaki-secondary: #556b2f;
+$khaki-light: #4a5d23;
+$khaki-text: #5a6b2f;
+$khaki-shadow: rgba(107, 124, 50, 0.1);
+$khaki-border: rgba(107, 124, 50, 0.2);
+$khaki-hover: rgba(107, 124, 50, 0.15);
+
+$white: #ffffff;
+$background-light: #f8f9fa;
+$text-dark: #2c3e50;
+$container-bg: rgba(255, 255, 255, 0.9);
+
+// Variables — Espacements
+$spacing-lg: 2rem;
+$spacing-xxl: 4rem;
+
+// Variables — Typographie
+$font-size-xxl: clamp(2rem, 4vw, 2.5rem);
+
+$line-height-base: 1.2;
+$line-height-relaxed: 1.7;
+
+// Variables — Rayons
+$border-radius-sm: 2px;
+
+// Variables — Transitions et ombres
+$transition-base: 0.3s ease;
+$shadow-light: 0 4px 15px rgba(107, 124, 50, 0.3);
+$shadow-hover: 0 6px 20px rgba(107, 124, 50, 0.4);
+$shadow-container: 0 8px 32px rgba(107, 124, 50, 0.1);
+$shadow-card: 0 4px 20px rgba(107, 124, 50, 0.15);
+
+// Mixins
+@mixin gradient-bg($color1, $color2, $direction: 135deg) {
+    background: linear-gradient($direction, $color1, $color2);
+}
+
+@mixin card-hover-effect {
+    transition: all $transition-base;
+
+    &:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: $shadow-hover;
+    }
+}
+
+@mixin container-style {
+    box-shadow: $shadow-container;
+    border: 1px solid $khaki-shadow;
+}
+
+// Animations
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes expandLine {
+    from {
+        width: 80px;
+    }
+
+    to {
+        width: 120px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+// Section — Projets (consolidée)
+.projects-section {
+    padding: $spacing-xxl $spacing-lg;
+    // suppression du fond local (utiliser .section-bg-light en HTML)
+    min-height: 80vh;
+
+    .projects-container {
+        @include container-style;
+    }
+
+    .projects-header {
+        .projects-subtitle {
+            color: $khaki-text;
+            line-height: $line-height-relaxed;
+        }
+    }
+
+    .projects-layout {
+        .project-detail-panel {
+            border: 1px solid $khaki-border;
+            box-shadow: $shadow-container;
+
+            .detail-title {
+                color: $khaki-light;
+                font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+                line-height: 1.3;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 120px;
+                    height: 4px;
+                    margin: 1rem auto 0;
+                    border-radius: $border-radius-sm;
+                    background: linear-gradient(90deg, $khaki-primary, $khaki-secondary);
+                }
+            }
+
+            .detail-section {
+                margin-top: $spacing-lg;
+
+                .section-title {
+                    color: $khaki-primary;
+                    letter-spacing: 0.5px;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 140px;
+                        height: 3px;
+                        margin-top: 6px;
+                        border-radius: $border-radius-sm;
+                        background: linear-gradient(90deg, $khaki-primary, $khaki-secondary);
+                    }
+
+                    &.preview {
+                        display: inline-flex;
+                    }
+                }
+
+                .section-content {
+                    color: $text-dark;
+                    line-height: 1.7;
+                }
+
+                .objectives-list {
+                    padding-left: $spacing-lg;
+                }
+
+                .objective-item {
+                    color: $text-dark;
+                }
+
+                .show-more-btn {
+                    color: $khaki-primary;
+                    transition: all $transition-base;
+                }
+            }
+
+            .images-grid {
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            }
+
+            .image-container {
+                border: 1px solid $khaki-border;
+                box-shadow: $shadow-card;
+                transition: transform $transition-base, box-shadow $transition-base;
+
+                &:hover {
+                    transform: translateY(-2px);
+                    box-shadow: $shadow-hover;
+                }
+
+                .project-image {
+                    height: 180px;
+                    object-fit: cover;
+                }
+
+                .image-overlay {
+                    opacity: 0;
+                    background: linear-gradient(135deg, $khaki-primary, $khaki-secondary);
+                    transition: opacity $transition-base;
+                    z-index: 2;
+                }
+
+                &:hover .image-overlay {
+                    opacity: 0.75;
+
+                    .fa-eye {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .detail-actions {
+                .github-link {
+                    background: $khaki-primary;
+                    box-shadow: $shadow-light;
+                    transition: transform $transition-base, box-shadow $transition-base;
+
+                    &:hover {
+                        transform: translateY(-1px);
+                        box-shadow: $shadow-hover;
+                    }
+                }
+            }
+        }
+
+        .projects-grid {
+            animation: fadeIn 0.8s ease forwards;
+            height: 1410px;
+        }
+
+        .project-item {
+            box-shadow: $shadow-card;
+            border: 1px solid $khaki-border;
+            @include card-hover-effect;
+            animation: slideInUp 0.6s ease forwards;
+
+            .projet {
+                .btn {
+                    transition: all $transition-base;
+
+                    &:hover {
+                        .project-image {
+                            transform: scale(1.1);
+                        }
+
+                        .project-overlay {
+                            opacity: 1;
+                            background: linear-gradient(135deg, rgba(107, 124, 50, 0.8), rgba(85, 107, 47, 0.9));
+                            border-radius: 30px;
+                        }
+
+                        .project-title {
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+
+                    .project-image {
+                        height: 200px;
+                        transition: transform $transition-base;
+                    }
+
+                    .project-overlay {
+                        position: absolute;
+                        inset: 0;
+                        transition: opacity $transition-base;
+                    }
+
+                    .project-content {
+                        .project-title {
+                            backdrop-filter: blur(5px);
+                            -webkit-backdrop-filter: blur(5px);
+                            background: rgba(0, 0, 0, 0.3);
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// suppression des @keyframes expandLine et slideInUp (centralisés dans styles.scss)
+// (on conserve fadeIn ici, utilisé uniquement par Projets)
+// Responsive
+@media (max-width: 992px) {
+    .projects-section .projects-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.carousel {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.carousel-content {
+    width: 95%;
+    max-width: 1200px;
+    height: 85%;
+    max-height: 800px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-close {
+    top: 0px;
+    right: 10px;
+    color: $khaki-text;
+
+    &:hover {
+        background: $khaki-hover;
+        color: $khaki-primary;
+    }
+}
+
+.carousel-nav {
+    width: 48px;
+    height: 48px;
+    background: $khaki-primary;
+    font-size: 1.6rem;
+    box-shadow: $shadow-hover;
+    transition: background 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        background: $khaki-secondary;
+        transform: translateY(-50%) scale(1.05);
+    }
+
+    &.carousel-prev {
+        left: 15px;
+    }
+
+    &.carousel-next {
+        right: 15px;
+    }
+}
+
+.carousel-image {
+    background: $background-light;
+}
+
+.carousel-counter {
+    bottom: 12px;
+    background: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,121 @@
+$khaki-primary: #6b7c32;
+$khaki-secondary: #556b2f;
+$khaki-light: #4a5d23;
+$khaki-text: #5a6b2f;
+$khaki-border: rgba(107, 124, 50, 0.2);
+
+$white: #ffffff;
+$background-light: #f8f9fa;
+
+$font-size-sm: 0.9rem;
+$font-size-base: 1rem;
+$font-size-md: 1.1rem;
+$font-size-lg: 1.125rem;
+$font-size-xxl: clamp(2rem, 4vw, 2.5rem);
+
+$line-height-relaxed: 1.8;
+
+$transition-base: 0.3s ease;
+$shadow-light: 0 4px 15px rgba(107, 124, 50, 0.25);
+$shadow-hover: 0 8px 24px rgba(107, 124, 50, 0.35);
+
+@mixin gradient-bg($color1, $color2, $direction: 135deg) {
+  background: linear-gradient($direction, $color1, $color2);
+}
+
+@mixin container-style {
+  width: 100%;
+}
+
+#about-me {
+  @include gradient-bg($white, $background-light);
+  min-height: 60vh;
+
+  .about-container {
+    width: 100%;
+    backdrop-filter: saturate(150%) blur(0.6px);
+  }
+
+  .about-header {
+    // suppression du style spécifique h1 (hérite désormais du global)
+    h1 {
+      color: $khaki-light;
+      font-size: $font-size-xxl;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .about-content {
+    .about-text {
+      max-width: 80%;
+      font-size: $font-size-lg;
+      line-height: $line-height-relaxed;
+      color: $khaki-text;
+
+      p {
+        text-align: justify;
+
+        &.intro-paragraph {
+          color: $khaki-light;
+        }
+      }
+    }
+  }
+
+  .cta-section {
+    border-top: 1px solid $khaki-border;
+
+    .contact-text {
+      font-size: $font-size-md;
+      color: $khaki-primary;
+    }
+
+    .cv-link {
+      background: linear-gradient(135deg, $khaki-primary, $khaki-secondary);
+      transition: all $transition-base;
+
+      &:hover {
+        background: linear-gradient(135deg, $khaki-secondary, $khaki-primary);
+        box-shadow: $shadow-hover;
+        transform: translateY(-1px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #about-me {
+    // (suppression de .about-header h1 { font-size }) — la taille est désormais gérée globalement
+
+    .cta-section .cv-link {
+      font-size: $font-size-sm;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #about-me {
+    .about-content .about-text {
+      max-width: 100%;
+
+      p {
+        text-align: left;
+      }
+    }
+
+    .cta-section {
+      .contact-text {
+        font-size: $font-size-base;
+      }
+
+      .cv-link {
+        flex-direction: row;
+        gap: 0.3rem;
+      }
+    }
+  }
+}

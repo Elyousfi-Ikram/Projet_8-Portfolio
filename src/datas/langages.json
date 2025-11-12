@@ -1,0 +1,18 @@
+[
+    {
+        "langage": "HTML & CSS",
+        "icon": "/asset/icons/html-css.png"
+    },
+    {
+        "langage": "JavaScript",
+        "icon": "/asset/icons/JavaScript.png"
+    },
+    {
+        "langage": "Scss",
+        "icon": "/asset/icons/scss.png"
+    },
+    {
+        "langage": "TypeScript",
+        "icon": "/asset/icons/typescript.png"
+    }
+]

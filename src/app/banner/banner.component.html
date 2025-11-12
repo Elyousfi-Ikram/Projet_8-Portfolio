@@ -1,0 +1,68 @@
+<header class="header" [class.scrolled]="isScrolled">
+  <nav
+    class="banner d-none d-md-flex justify-content-between align-items-center w-100 px-4"
+    role="navigation"
+    aria-label="Navigation principale"
+  >
+    <div class="nav-brand">
+      <img src="/assets/logo.png" alt="Logo" class="brand-logo">
+    </div>
+    <div class="nav-links d-flex flex-wrap justify-content-end gap-3">
+      <!-- suppression de `index as index` (non utilisé) -->
+      <a
+        *ngFor="let item of navigationItems"
+        [href]="item.href"
+        class="nav-link py-2 px-3"
+        [attr.aria-label]="'Aller à ' + item.label"
+      >
+        {{ item.label }}
+      </a>
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div class="mobile-nav d-flex d-md-none justify-content-between align-items-center px-3">
+    <a href="#header" class="mobile-brand" aria-label="Retour à l'accueil">
+      Accueil
+    </a>
+
+    <button
+      class="menu-toggle d-flex justify-content-center align-items-center"
+      [class.active]="isOpen"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="isOpen"
+      aria-controls="mobile-menu"
+      [attr.aria-label]="isOpen ? 'Fermer le menu' : 'Ouvrir le menu'"
+    >
+      <span *ngIf="!isOpen">☰</span>
+      <span *ngIf="isOpen">✕</span>
+    </button>
+
+    <nav
+      id="mobile-menu"
+      class="mobile-menu"
+      [class.open]="isOpen"
+      role="navigation"
+      aria-label="Navigation mobile"
+    >
+      <!-- suppression de `index as index` (non utilisé) -->
+      <a
+        *ngFor="let item of navigationItems"
+        [href]="item.href"
+        class="mobile-link d-block py-3 px-4"
+        (click)="closeMenu()"
+        [attr.aria-label]="'Aller à ' + item.label"
+      >
+        {{ item.label }}
+      </a>
+    </nav>
+  </div>
+
+  <!-- Overlay pour fermer le menu mobile -->
+  <div
+    *ngIf="isOpen"
+    class="menu-overlay"
+    (click)="closeMenu()"
+    aria-hidden="true"
+  ></div>
+</header>

@@ -1,0 +1,49 @@
+<section id="about-me" class="py-5 px-4 d-flex justify-content-center section-bg-light" aria-labelledby="about-title">
+  <div class="about-container p-4 p-lg-5 mx-auto">
+    <header class="about-header mb-4 text-center">
+      <h1 id="about-title" class="mb-3 fw-bold">À propos de moi</h1>
+      <div class="title-underline mx-auto rounded-1" aria-hidden="true"></div>
+    </header>
+
+    <div class="about-content row justify-content-center">
+      <div class="about-text">
+        <p class="intro-paragraph mb-4 lead fs-5 fw-semibold">
+          Passionnée par le web et toujours à la recherche de nouveaux défis,
+          je crée des interfaces modernes, fluides et accessibles, en mettant
+          l'expérience utilisateur au cœur de mes projets.
+        </p>
+
+        <p class="skills-paragraph mb-4">
+          Spécialisée en développement front-end, je m'assure que chaque site
+          soit élégant, réactif et agréable à utiliser. Je possède également
+          les compétences de base en back-end, ce qui me permet de mieux
+          comprendre l'ensemble d'un projet et de collaborer efficacement
+          avec d'autres développeurs.
+        </p>
+
+        <p class="passion-paragraph mb-4">
+          Curieuse et toujours en veille, j'adore explorer les nouvelles
+          tendances et tester des solutions innovantes pour créer des sites
+          performants et actuels.
+        </p>
+
+        <div class="cta-section d-flex flex-wrap align-items-center justify-content-center pt-4 mt-4 border-top">
+          <p class="contact-text mb-0 text-center w-100">
+            N'hésitez pas à me contacter ou à consulter mon
+          </p>
+          <a
+            href="/CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cv-link btn btn-success btn-lg rounded-pill ms-2 d-inline-flex align-items-center gap-2 border-0 text-white"
+            (click)="handleCVDownload()"
+            aria-label="Télécharger mon CV (PDF)"
+          >
+            CV
+            <fa-icon [icon]="faArrowDown" class="ms-1"></fa-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

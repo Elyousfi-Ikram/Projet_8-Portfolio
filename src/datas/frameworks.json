@@ -1,0 +1,20 @@
+[
+    {
+        "framework": "React",
+        "icon": "/asset/icons/ReactJS.png"
+    },
+    {
+        "framework": "Node.js",
+        "icon": [
+            "/asset/icons/nodejs.png"
+        ]
+    },
+    {
+        "framework": "Angular",
+        "icon": "/asset/icons/angular.png"
+    },
+    {
+        "framework": "Bootstrap",
+        "icon": "/asset/icons/bootstrap.png"
+    }
+]

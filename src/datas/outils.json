@@ -1,0 +1,89 @@
+[
+    {
+        "outils": "Vs Code",
+        "competencesLang": [
+
+        ],
+        "icon": [
+            "/asset/icons/vscode.png"
+        ]
+    },
+    {
+        "outils": "Git",
+        "icon": [
+            "/asset/icons/Git.png"
+        ]
+    },
+    {
+        "outils": "GitHub",
+        "competencesLang": [
+
+        ],
+        "icon": [
+            "/asset/icons/github.png"
+        ]
+    },
+    {
+        "outils": "Figma",
+        "competencesLang": [
+
+        ],
+        "icon": [
+            "/asset/icons/figma.png"
+        ]
+    },
+    {
+        "outils": "Lighthouse",
+        "competencesLang": [
+
+        ],
+        "icon": [
+            "/asset/icons/lighthouse.png"
+        ]
+    },
+    {
+        "outils": "Google Rich Snippet",
+        "competencesLang": [
+
+        ],
+        "icon": [
+            "/asset/icons/google.png"
+        ]
+    },
+    {
+        "outils": "Wave",
+        "competencesLang": [
+
+        ],
+        "icon": [
+            "/asset/icons/wave.jpg"
+        ]
+    },
+    {
+        "outils": "UglifyJS",
+        "competencesLang": [
+
+        ],
+        "icon": [
+            "/asset/icons/uglify.png"
+        ]
+    },
+    {
+        "outils": "Postman",
+        "competencesLang": [
+
+        ],
+        "icon": [
+            "/asset/icons/postman.png"
+        ]
+    },
+    {
+        "outils": "Express JS",
+        "competencesLang": [
+
+        ],
+        "icon": [
+            "/asset/icons/express.png"
+        ]
+    }
+]

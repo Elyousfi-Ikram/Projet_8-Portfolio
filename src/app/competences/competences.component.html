@@ -1,0 +1,48 @@
+<section id="competences" class="competences-section section-bg-light" [class.visible]="isVisible" aria-labelledby="competences-title">
+  <div class="competences-container w-100 my-0 mx-auto p-5 rounded-5">
+    <header class="competences-header text-center mb-3">
+      <h1 id="competences-title" class="competences-title fw-bold mb-3">Compétences acquises</h1>
+      <div class="title-underline mx-auto mb-3 mt-0 rounded-1" aria-hidden="true"></div>
+      <p class=" mb-4 fw-normal">Technologies et outils que je maîtrise</p>
+    </header>
+
+    <div class="competences-content d-grid gap-5">
+      <div class="competence-category" *ngFor="let section of sections; let sectionIndex = index; trackBy: trackByIndex">
+        <div class="category-header d-flex justify-content-center align-items-center gap-3 p-4 text-white">
+          <i [class]="section.iconClass + ' category-icon'" aria-hidden="true"></i>
+          <h2 class="category-title m-0 fw-semibold text-uppercase">{{ section.title }}</h2>
+        </div>
+
+        <div class="skills-grid d-grid p-4 bg-white rounded-5 ">
+          <!-- Garde explicite et fallback pour éviter TS2532 -->
+          <ng-container *ngIf="section.data && section.data.length > 0; else noData">
+            <div
+              class="skill-item d-flex flex-column justify-content-center align-items-center p-4 bg-white rounded-5"
+              *ngFor="let item of (section.data ?? []); let index = index; trackBy: trackByIndex"
+              [style.animationDelay]="(sectionIndex * 0.1 + index * 0.05) + 's'"
+            >
+              <div class="skill-icon-container d-flex justify-content-center align-items-center gap-2 mb-3 p-3 rounded-5">
+                <!-- iterate over a normalized array of icons -->
+                <ng-container *ngFor="let iconPath of iconList(item.icon)">
+                  <img
+                    [src]="resolveIconPath(iconPath)"
+                    [alt]="item[section.key] || section.title"
+                    class="skill-icon object-fit-contain rounded-1"
+                    loading="lazy"
+                  />
+                </ng-container>
+              </div>
+              <h3 class="skill-name fs-6 fw-semibold text-center m-0">{{ item[section.key] || '' }}</h3>
+            </div>
+          </ng-container>
+
+          <ng-template #noData>
+            <div class="no-data text-center fst-italic">
+              <p>Aucune donnée disponible pour cette catégorie.</p>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

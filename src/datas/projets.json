@@ -1,0 +1,204 @@
+[
+    {
+        "title": "Site VERIF-ARRÊT — Agence d'investigation privée - Olivier LAGARDE",
+        "img": "/asset/projets/verifarret-cover.png",
+        "titleProjet": "Conception et développement d'un site Angular optimisé SEO pour une agence d'investigation privée.",
+        "objectifs": [
+            "Concevoir une interface responsive en Angular (mobile, tablette, desktop).",
+            "Mettre en place SEO avancé (meta, JSON-LD, canonical, robots, sitemap).",
+            "Gérer le contenu multilingue via un service de traduction (fr/en).",
+            "Optimiser les performances (lazy-load images, ressources, accessibilité).",
+            "Structurer la navigation et les routes (Accueil, Découvrir, Prestations, Engagements).",
+            "Intégrer des données Schema.org (Organization, LocalBusiness, Service).",
+            "Configurer CI/CD avec GitHub Actions et déploiement IONOS.",
+            "Maintenir une base de code propre et versionnée sur Git/GitHub."
+        ],
+        "infoProjet": "Application Angular orientée SEO et performance pour VERIF-ARRÊT, avec pages thématiques (Accueil, Prestations, Découvrir, Engagements) et intégration de données structurées. Le projet inclut un service de traduction, des balises meta optimisées, une gestion des routes cohérente, et une configuration de déploiement automatisée.",
+        "maquettes": [
+            "/asset/projets/verifarret1.png",
+            "/asset/projets/verifarret2.png",
+            "/asset/projets/verifarret3.png",
+            "/asset/projets/verifarret4.png",
+            "/asset/projets/verifarret5.png",
+            "/asset/projets/verifarret6.png"
+        ],
+        "URLcode": "https://github.com/Elyousfi-Ikram/verif-arret",
+        "URLsite": "https://verifarret.com/"
+    },
+    {
+        "title": "Site INTELLIGENCIA-GENEA® — Cabinet de généalogie professionnelle - Olivier LAGARDE",
+        "img": "/asset/projets/intelligencia-genea-cover.webp",
+        "titleProjet": "Conception et développement d'un site Angular SSR optimisé SEO pour un cabinet de généalogie professionnelle.",
+        "objectifs": [
+            "Concevoir une interface responsive en Angular (standalone components).",
+            "Mettre en place SEO avancé (meta, JSON-LD, canonical, hreflang, microdata).",
+            "Activer SSR avec @angular/ssr pour un rendu côté serveur.",
+            "Optimiser les performances (images WebP, cache statique, accessibilité, scroll restoration).",
+            "Structurer la navigation et les routes (Accueil, Généalogie, Agence, Services, Honoraires, Garanties, Déontologie, Réseau).",
+            "Intégrer des données Schema.org (Organization, Service, WebPage, Article, ContactPoint).",
+            "Implémenter modales et formulaires (contact, avis, mentions légales, cookies, politique) avec EmailJS.",
+            "Configurer CI/CD avec GitHub Actions et déploiement Node/Express SSR.",
+            "Maintenir une base de code propre et versionnée sur Git/GitHub."
+        ],
+        "infoProjet": "Application Angular SSR orientée SEO pour INTELLIGENCIA-GENEA® : pages thématiques (Accueil, Généalogie, Agence, Services, Honoraires, Garanties, Déontologie, Réseau), balises meta enrichies, JSON-LD (Organization, Service, WebPage, Article), modales (contact, avis, RGPD), intégration EmailJS et tracking gtag, avec serveur Express pour SSR.",
+        "maquettes": [
+            "/asset/projets/intelligencia-genea1.png",
+            "/asset/projets/intelligencia-genea2.png",
+            "/asset/projets/intelligencia-genea3.png",
+            "/asset/projets/intelligencia-genea4.png",
+            "/asset/projets/intelligencia-genea5.png",
+            "/asset/projets/intelligencia-genea6.png",
+            "/asset/projets/intelligencia-genea7.png",
+            "/asset/projets/intelligencia-genea8.png"
+        ],
+        "URLcode": "https://github.com/Elyousfi-Ikram/intelligencia-genea",
+        "URLsite": "https://intelligencia-genea.com/"
+    },
+    {
+        "title": "Application e-commerce",
+        "img": "/asset/projets/default-cover.jpeg",
+        "titleProjet": "Développez une application e-commerce avec Angular.",
+        "objectifs": [
+            "Initialiser une application avec Angular CLI.",
+            "Créer des composants Angular réutilisables.",
+            "Implémenter le routing et la navigation.",
+            "Gérer l'état de l'application avec les services.",
+            "Intégrer des API REST avec HttpClient.",
+            "Mettre en place des formulaires réactifs."
+        ],
+        "infoProjet": "Développer une application e-commerce complète en utilisant Angular et TypeScript. Le projet inclut la création d'une interface utilisateur moderne avec des composants réutilisables, la gestion du panier d'achat, l'authentification des utilisateurs, et l'intégration avec des API backend. L'application utilise Angular Material pour le design, RxJS pour la programmation réactive, et les bonnes pratiques d'architecture Angular pour assurer la maintenabilité et la scalabilité du code.",
+        "maquettes": [
+            "/asset/projets/home.png",
+            "/asset/projets/kits.png",
+            "/asset/projets/products.png",
+            "/asset/projets/product-detail.png",
+            "/asset/projets/compose.png",
+            "/asset/projets/profil.png",
+            "/asset/projets/panier.png",
+            "/asset/projets/checkout.png",
+            "/asset/projets/contact.png"
+        ],
+        "URLcode": "https://github.com/Elyousfi-Ikram/projet-angular"
+    },
+    {
+        "title": "Site d'une agence de voyage",
+        "img": "/asset/projets/Voyage.png",
+        "titleProjet": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS.",
+        "objectifs": [
+            "Implémenter une interface responsive avec HTML et CSS.",
+            "Intégrer du contenu conformément à une maquette avec HTML et CSS.",
+            "Versionner son projet avec Git et Github.",
+            "Installer un environnement de développement front-end."
+        ],
+        "infoProjet": "Créer une page d'accueil responsive pour une agence de voyage en utilisant HTML et CSS, en s'appuyant sur des maquettes Figma adaptées aux écrans mobile, tablette et desktop. L'objectif est de concevoir un code structuré et stylisé manuellement, tout en développant des compétences essentielles en design responsive afin d'assurer une expérience utilisateur optimale sur tous les appareils.",
+        "maquettes": [
+            "/asset/projets/projet-1-Desktop.png",
+            "/asset/projets/projet-1-Tablette.png"
+        ],
+        "URLcode": "https://github.com/Elyousfi-Ikram/Projet_2-HTML-CSS"
+    },
+    {
+        "title": "Site portfolio d'une architecte d'intérieur",
+        "img": "asset/projets/Architecte.jpg",
+        "titleProjet": "Créez une page web dynamique avec JavaScript.",
+        "objectifs": [
+            "Gérer les événements utilisateurs avec JavaScript.",
+            "Manipuler les éléments du DOM avec JavaScript.",
+            "Récupérer les données utilisateurs dans le JavaScript via des formulaires."
+        ],
+        "infoProjet": "Développer une page web dynamique pour une architecte d'intérieur en utilisant JavaScript et en intégrant une communication avec une API. La mission concerne la partie Front-End à partir d'un fichier HTML fourni, avec une gestion des interactions utilisateur et une manipulation du DOM. Le projet inclut la mise en place d'une page de connexion pour l'administrateur ainsi qu'une modale dédiée à l'upload de médias. L'utilisation de Figma, Visual Studio Code et GitHub est prévue pour la conception et le développement des fonctionnalités interactives, en appliquant les principes du développement web moderne.",
+        "maquettes": [
+            "/asset/projets/projet-2-Homepage.png",
+            "/asset/projets/projet-2-Login.png",
+            "/asset/projets/projet-2-Homepage_edit.png",
+            "/asset/projets/projet-2-Homepage_edit_1.png",
+            "/asset/projets/projet-2-Homepage_edit_2.png",
+            "/asset/projets/projet-2-Homepage_edit_3.png",
+            "/asset/projets/projet-2-Homepage_edit_sucess.png"
+        ],
+        "URLcode": "https://github.com/Elyousfi-Ikram/Projet_3-JavaScript"
+    },
+    {
+        "title": "Site d'une photographe",
+        "img": "/asset/projets/Photographe.jpg",
+        "titleProjet": "Débuggez et optimisez un site de photographe.",
+        "objectifs": [
+            "Optimiser les performances d'un site web.",
+            "Débugger un site web grâce aux Chrome DevTools.",
+            "Utilisation des outils tels que Lighthouse, Wave et Google Rich Snippet.",
+            "Rédiger un cahier de recette pour tester un site."
+        ],
+        "infoProjet": "Travailler en tant que développeur freelance pour optimiser le référencement d'un site web en améliorant sa performance et son accessibilité. À l'aide d'outils comme Lighthouse et Wave, analyser les problèmes existants, proposer des recommandations, puis appliquer des modifications pour optimiser la vitesse de chargement, la structure du code et le SEO. Enfin, présenter un rapport comparant les résultats avant et après les améliorations, mettant en avant leur impact sur le référencement et l'accessibilité.",
+        "maquettes": [],
+        "URLcode": "https://github.com/Elyousfi-Ikram/Projet_4-Debuggez-Optimisation"
+    },
+    {
+        "title": "Site de location immobilière",
+        "img": "/asset/projets/Agence.jpg",
+        "titleProjet": "Créez une application web de location immobilière avec React.",
+        "objectifs": [
+            "Initialiser une application avec Create React App.",
+            "Configurer la navigation entre les pages de l'application avec React Router.",
+            "Développer des éléments de l'interface d'un site web grâce à des composants React.",
+            "Mettre en œuvre des animations CSS.",
+            "Développer une interface web avec Sass."
+        ],
+        "infoProjet": "Développer le front-end d'une application en utilisant React et React Router pour assurer une navigation fluide et une interface réactive. L'application repose sur des maquettes fournies et des données simulées en JSON. L'intégration de SASS permet une gestion efficace du CSS, tandis que l'ajout d'animations améliore l'expérience utilisateur. Ce projet met en pratique des concepts clés du développement web moderne, essentiels pour concevoir des applications dynamiques et interactives.",
+        "maquettes": [
+            "/asset/projets/projet-4-Home_Desktop.png",
+            "/asset/projets/projet-4-Fiche-Logement_Desktop.png",
+            "/asset/projets/projet-4-A-Propos_Desktop.png",
+            "/asset/projets/projet-4-404_Desktop.png",
+            "/asset/projets/projet-4-Fiche-Logement_Mobile.png",
+            "/asset/projets/projet-4-A-Propos_Mobile.png",
+            "/asset/projets/projet-4-404_Mobile.png"
+        ],
+        "URLcode": "https://github.com/Elyousfi-Ikram/Projet_5-React"
+    },
+    {
+        "title": "Site de notation de livres",
+        "img": "/asset/projets/Book.jpg",
+        "titleProjet": "Développez le back-end d'un site de notation de livres.",
+        "objectifs": [
+            "Implémenter un modèle logique de données conformément à la réglementation.",
+            "Mettre en œuvre des opérations CRUD de manière sécurisée.",
+            "Stocker des données de manière sécurisée."
+        ],
+        "infoProjet": "Développer le back-end d'un site de notation de livres en utilisant Node.js, Express et MongoDB. Mise en place d'un serveur, définition des modèles de données avec Mongoose et implémentation des opérations CRUD pour la gestion des livres et des notations. Intégration d'un système d'authentification sécurisé, optimisation et gestion des images, ainsi que calcul des notes moyennes. Application de l'architecture MVC et des bonnes pratiques du Green Code pour concevoir des API RESTful modernes et performantes, en assurant sécurité et efficacité des données.",
+        "maquettes": [
+            "/asset/projets/projet-5-Signup.png",
+            "/asset/projets/projet-5-Accueil.png",
+            "/asset/projets/projet-5-Book-add.png",
+            "/asset/projets/projet-5-Book-admin.png",
+            "/asset/projets/projet-5-Add-success.png",
+            "/asset/projets/projet-5-Book-delete.png",
+            "/asset/projets/projet-5-Book.png",
+            "/asset/projets/projet-5-Book-note-added.png"
+        ],
+        "URLcode": "https://github.com/Elyousfi-Ikram/Projet_6-Back-end"
+    },
+    {
+        "title": "Site de création de menu",
+        "img": "/asset/projets/MENU.png",
+        "titleProjet": "Planifiez le développement du site de votre client.",
+        "objectifs": [
+            "Découper une fonctionnalité en tâches pour préparer le développement.",
+            "Mettre en place une méthode de veille technologique.",
+            "Présenter la solution technique.",
+            "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels.",
+            "Suivre le déroulement du projet grâce à un outil de gestion de projet."
+        ],
+        "infoProjet": "Planifier le développement d'un site web en mettant l'accent sur l'organisation et la gestion plutôt que sur le codage. La rédaction des spécifications techniques, la veille technologique pour suivre les dernières tendances et l'utilisation d'outils de gestion de projet comme Notion permettent de suivre l'avancement. La présentation de la solution technique finale fait également partie des responsabilités. Ces compétences, incluant la gestion de projet, la traduction des besoins fonctionnels en spécifications et l'utilisation des outils de veille et de gestion, sont essentielles pour réussir dans le développement web et évoluer vers une approche agile.",
+        "maquettes": [
+            "/asset/projets/projet-6-Login.png",
+            "/asset/projets/projet-6-Log_in_overlay.png",
+            "/asset/projets/projet-6-Dashboard.png",
+            "/asset/projets/projet-6-add_category.png",
+            "/asset/projets/projet-6-category_modale.png",
+            "/asset/projets/projet-6-add_plat.png",
+            "/asset/projets/projet-6-add_plat_modale.png",
+            "/asset/projets/projet-6-modifier_font_color.png",
+            "/asset/projets/projet-6-diffuser_plat.png"
+        ]
+    }
+]

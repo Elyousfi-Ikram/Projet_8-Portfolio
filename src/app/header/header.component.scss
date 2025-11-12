@@ -1,0 +1,20 @@
+$brightness-filter: 50%;
+$banner-height: 600px;
+$font-family: Raleway;
+$font-weight: 700;
+$white-color: white;
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: $banner-height;
+
+  .img-header {
+    object-fit: cover;
+    filter: brightness($brightness-filter);
+    width: 100%;
+    height: $banner-height;
+  }
+}

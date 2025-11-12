@@ -1,0 +1,52 @@
+<section id="contact" class="contact-section d-flex justify-content-center align-items-center">
+  <div class="contact-container w-100">
+    <header class="contact-header text-center mb-5">
+      <h1 class="contact-title fs-1 fw-bold mb-4">
+        Contact
+      </h1>
+      <div class="title-underline mx-auto mb-3 mt-0 rounded-1" aria-hidden="true"></div>
+      <p class="contact-subtitle my-0 mx-auto fs-5">
+        Envie d'en savoir plus sur mon profil ou de collaborer sur un projet ?
+        Contactez-moi sans hésiter, je vous répondrai dès que possible.
+      </p>
+    </header>
+
+    <form class="contact-form p-5 bg-white rounded-4" (ngSubmit)="onSubmit($event)">
+      <div class="form-row d-grid gap-4">
+        <div class="input-group position-relative">
+          <i class="input-icon fas fa-user"></i>
+          <input type="text" id="nom" name="name" placeholder="Nom et Prénom" [(ngModel)]="formData.name" required
+            [disabled]="isLoading" class="form-input w-100 rounded-4 fs-6" />
+        </div>
+        <div class="input-group">
+          <i class="input-icon fas fa-envelope"></i>
+          <input type="email" id="email" name="email" placeholder="Adresse email" [(ngModel)]="formData.email" required
+            [disabled]="isLoading" class="form-input w-100 rounded-4 fs-6" />
+        </div>
+      </div>
+
+      <div class="input-group">
+        <i class="input-icon fas fa-comment-dots textarea-icon"></i>
+        <input type="text" id="sujet" name="sujet" placeholder="Objet du message" [(ngModel)]="formData.sujet" required
+          [disabled]="isLoading" class="form-input w-100 rounded-4" />
+      </div>
+
+      <div class="input-group">
+        <i class="input-icon fas fa-comment-dots textarea-icon"></i>
+        <textarea id="message" name="message" placeholder="Votre message..." [(ngModel)]="formData.message" required
+          [disabled]="isLoading" class="form-textarea w-100 rounded-4 fs-6" rows="6"></textarea>
+      </div>
+
+      <div *ngIf="messageStatus.text" [ngClass]="['message-status', messageStatus.type]">
+        {{ messageStatus.text }}
+      </div>
+
+      <button type="submit"
+        class="submit-btn d-flex justify-content-center align-items-center gap-2 w-100 py-3 px-4 text-white border-0 rounded-4 fs-5 fw-normal position-relative overflow-hidden"
+        [class.loading]="isLoading" [disabled]="isLoading">
+        <i class="btn-icon fas fa-paper-plane"></i>
+        <span class="btn-text">{{ isLoading ? 'Envoi...' : 'Envoyer' }}</span>
+      </button>
+    </form>
+  </div>
+</section>
