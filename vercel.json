@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm ci && npm run build",
+  "outputDirectory": "dist/portfolio-angular",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
